@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Snapiscool Wallet",
+    "price": "Rs. 1600 / $5.00",
+    "image": "2.jpg",
+    "colors": ["Brown", "Dark Brown", "Black"]
+  },
+  {
+    "name": "Coming Soon Product 1",
+    "price": "—",
+    "image": "coming1.jpg",
+    "colors": ["Coming Soon"]
+  },
+  {
+    "name": "Coming Soon Product 2",
+    "price": "—",
+    "image": "coming2.jpg",
+    "colors": ["Coming Soon"]
+  }
+]

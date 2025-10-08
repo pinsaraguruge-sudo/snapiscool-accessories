@@ -1,86 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Snapiscool Accessories</title>
-  <link rel="icon" href="logo.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#home"><img src="logo.png" alt="Snapiscool logo" class="logo"/><span class="brand-text">Snapiscool Accessories</span></a>
-    <nav class="nav-right">
-      <a href="#shop" class="nav-link">Shop</a>
-      <a href="#contact" class="nav-link">Contact</a>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Snapiscool Logo" />
+      <h1>Snapiscool Accessories</h1>
+    </div>
+    <nav>
+      <button class="cart-btn">🛒 Cart</button>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>Snapiscool Accessories — Smart Looks. Smarter Prices.</h1>
-        <p class="sub">Quality accessories at affordable prices. Free delivery in Sri Lanka — worldwide shipping available (charges apply).</p>
-        <a class="cta" href="#shop">Shop Now</a>
-      </div>
-      <div class="hero-carousel" id="homeCarousel">
-        <div class="slide">Shopping Made Affordable</div>
-        <div class="slide">Free Delivery Throughout Sri Lanka</div>
-        <div class="slide">Worldwide Shipping — Charges Apply</div>
-      </div>
-    </section>
+  <section class="carousel">
+    <div class="slide active">Shopping made affordable</div>
+    <div class="slide">Free delivery throughout Sri Lanka</div>
+    <div class="slide">Worldwide shipping available</div>
+  </section>
 
-    <section id="shop" class="featured">
-      <h2>Featured — Snapiscool Wallets</h2>
-      <p class="muted">Price shown in local currency for Sri Lanka (LKR). International visitors see USD.</p>
-
-      <div class="product">
-        <div class="product-media">
-          <div class="prod-carousel" id="prodCarousel">
-            <img src="wallet1.jpg" alt="wallet" class="prod-img"/>
-            <img src="wallet2.jpg" alt="wallet" class="prod-img"/>
-            <img src="wallet3.jpg" alt="wallet" class="prod-img"/>
-          </div>
-        </div>
-
-        <div class="product-info">
-          <h3 id="productTitle">Snapiscool Wallets</h3>
-          <p class="desc">Premium finish. Free Delivery Islandwide.</p>
-          <div class="price" id="price">Rs. 1600</div>
-
-          <label>Color</label>
-          <div class="color-buttons" id="colorButtons">
-            <button class="color-btn brown active" data-color="Brown">Brown</button>
-            <button class="color-btn darkbrown" data-color="Dark Brown">Dark Brown</button>
-            <button class="color-btn black" data-color="Black">Black</button>
-          </div>
-
-          <label>Quantity</label>
-          <div class="qty">
-            <button id="qminus">-</button><div id="qval">1</div><button id="qplus">+</button>
-          </div>
-
-          <div class="actions">
-            <button id="addCart" class="btn primary">Add to Cart</button>
-            <button id="buyNow" class="btn alt">Buy Now</button>
-          </div>
-
-          <div class="notes">
-            <p><strong>COD:</strong> Available only in Sri Lanka.</p>
-            <p><strong>International:</strong> Shipping charges apply. Pay with PayPal (USD) at checkout.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <h3>Contact</h3>
-      <p>WhatsApp: +94 77 ******* (update later)</p>
-      <p>Email: info@snapiscoolaccessories.com</p>
-    </section>
+  <main>
+    <h2>Our Products</h2>
+    <div id="product-container" class="product-container"></div>
   </main>
 
-  <footer class="footer">© Snapiscool Accessories — Free delivery in Sri Lanka. COD in Sri Lanka only.</footer>
+  <div id="checkout-bar" class="checkout-bar">
+    <h3>Checkout Options</h3>
+    <div class="payment-methods">
+      <button class="pay-btn visa">💳 Card (Visa / Master / Amex)</button>
+      <button class="pay-btn paypal">🪙 PayPal</button>
+      <button class="pay-btn cod">🚚 Cash on Delivery (Sri Lanka only)</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Snapiscool Accessories | All Rights Reserved</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
